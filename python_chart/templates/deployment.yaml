@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eksproject
+  labels:
+    app: pythonapp
+spec:
+  selector:
+    matchLabels:
+      app: pythonapp
+      tier: web
+  template:
+    metadata:
+      labels:
+        app: pythonapp
+        tier: web
+    spec:
+      containers:
+      - name: eksproject
+        image: abhishekn20/eks_helm_proj_image
+        ports:
+        - containerPort: 8080
