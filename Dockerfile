@@ -6,4 +6,4 @@ RUN pip install folium
 
 RUN pip install pandas
 
-CMD [ "python", "./src/main.py" ]
+CMD [ "python", "src/main.py" ]
