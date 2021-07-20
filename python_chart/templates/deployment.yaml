@@ -19,4 +19,4 @@ spec:
       - name: eksproject
         image: abhishekn20/eks_helm_proj_image
         ports:
-        - containerPort: 8080
+        - containerPort: 6000
