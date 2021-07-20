@@ -1,6 +1,9 @@
-# Program to generate a random number between 0 and 9
+from flask import Flask
+app = Flask(__name__)
 
-# importing the random module
-import random
+@app.route("/")
+def hello():
+    return "Hello from Python!"
 
-print(random.randint(0,9))
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')

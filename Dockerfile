@@ -1,5 +1,12 @@
 FROM python:3
 
-ADD ./src/main.py /
+WORKDIR /usr/src/app
 
-ENTRYPOINT ["python"]
+ADD main.py .
+ADD requirements.txt .
+
+RUN pip install -r requirements.txt
+
+EXPOSE 5000
+
+CMD ["python", "main.py"]
