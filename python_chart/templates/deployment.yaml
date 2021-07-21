@@ -9,6 +9,7 @@ spec:
     matchLabels:
       app: pythonapp
       tier: web
+      environment: development
   replicas: 2
   template:
     metadata:
