@@ -6,8 +6,7 @@ metadata:
     app: pythonapp
 spec:
   ports:
-  - port: 6000
-    targetPort: 5000
-  type: LoadBalancer
+  - port: 5000
+  type: NodePort
   selector:
     app: pythonapp
