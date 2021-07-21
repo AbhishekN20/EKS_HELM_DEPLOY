@@ -9,14 +9,12 @@ spec:
     matchLabels:
       app: pythonapp
       tier: web
-      environment: development
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
         app: pythonapp
         tier: web
-        environment: development
     spec:
       containers:
       - name: eksproject
