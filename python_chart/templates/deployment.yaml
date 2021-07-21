@@ -16,6 +16,7 @@ spec:
       labels:
         app: pythonapp
         tier: web
+        environment: development
     spec:
       containers:
       - name: eksproject
