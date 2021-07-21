@@ -10,7 +10,7 @@ spec:
       app: pythonapp
       tier: web
       environment: development
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
